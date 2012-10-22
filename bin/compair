@@ -1,0 +1,19 @@
+#!/usr/local/bin/node
+var compair = require('../lib/compair');
+var argv = require('optimist')
+    .usage('Usage: compair --url=[URL] --comp=[path to comp]')
+    .demand(['url','comp'])
+    .default('b', false)
+    .default('size', '1024')
+    .default('extension' , '.png')
+    .default('tolerance' , 0)
+    .argv;
+
+var code = compair(argv.url, argv.comp, {
+                                baseline : argv.b,
+                                extension : argv.extension,
+                                tolerance : argv.tolerance,
+                                size : JSON.parse('['+argv.size+']')
+                             });
+console.dir(code);
+//process.exit(code);

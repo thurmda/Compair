@@ -1,0 +1,16 @@
+{
+  "author": "Dan thurman <dan@danielthurman.com>",
+  "name": "compair",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.8"
+  },
+  "dependencies": {
+    "phantom" : "0.3.5"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
