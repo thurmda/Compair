@@ -45,10 +45,10 @@ Set baseline screenshots in widths for various mobile devices.
 
 #### Good examples of responsive design sites
 
-http://www.ethanmarcotte.com/
-http://forefathersgroup.com/
-http://www.gosphero.com/
-http://css-tricks.com/
+* http://www.ethanmarcotte.com/
+* http://forefathersgroup.com/
+* http://www.gosphero.com/
+* http://css-tricks.com/
 
 
 #### About responsive design
