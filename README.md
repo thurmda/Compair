@@ -6,7 +6,7 @@ continous intergration system. It can also speed your development of a
 responsive design layout.
 
 ## Install
-    git clone <//TODO copy from github>
+    git clone git@bitbucket.org:thurmda/compair.git
     npm install
     npm test
 
