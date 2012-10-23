@@ -2,8 +2,11 @@
 
 Compair is a cli that will take screen shots of webpages and compare them to a
 previous baseline. This can be incredibly useful when run as part of a
-continous intergration system. It can also speed your development of a
-responsive design layout.
+continous intergration system. Compair will exit with a non-zero exit code when a
+comparison does not match a baseline otherwise it will exit with 0. It was designed 
+to be used with Jenkins so that modifications to CSS or HTML that
+unintentionaly change a design could be caught imediately. It can also speed your 
+development of a responsive design layout.
 
 ## Install
     git clone git@bitbucket.org:thurmda/compair.git
