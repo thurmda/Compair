@@ -5,7 +5,7 @@ if [ $? -eq 0 ]
     then echo 'FAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
 fi
 
-echo -e "bin/compair --url=file://$PWD/test/index/html --comp=test/tmp/test -b
+echo -e "bin/compair --url=file://$PWD/test/index.html --comp=test/tmp/test -b
 \nSets baseline"
 bin/compair --url=file://$PWD/test/index.html --comp=test/tmp/test -b
 if [ $? -eq 1 ]

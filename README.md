@@ -1,4 +1,4 @@
- #Compair
+#Compair
 
 Compair is a cli that will take screen shots of webpages and compare them to a
 previous baseline. This can be incredibly useful in when run as part of a

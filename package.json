@@ -12,5 +12,8 @@
     "phantom" : "https://github.com/thurmda/phantomjs-node/tarball/master"
   },
   "devDependencies": {},
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "scripts" : {
+    "test" : "test/dependencies.sh; test/cli.sh"
+  }
 }

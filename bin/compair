@@ -7,13 +7,24 @@ var argv = require('optimist')
     .default('size', '1024')
     .default('extension' , '.png')
     .default('tolerance' , 0)
+    .default('timeout' , 1000 * 60)
     .argv;
 
-var code = compair(argv.url, argv.comp, {
-                                baseline : argv.b,
-                                extension : argv.extension,
-                                tolerance : argv.tolerance,
-                                size : JSON.parse('['+argv.size+']')
-                             });
-console.dir(code);
-//process.exit(code);
+var timeout = setTimeout(cb, argv.timeout);
+
+compair(argv.url,
+        argv.comp,
+        {   baseline : argv.b,
+            extension : argv.extension,
+            tolerance : argv.tolerance,
+            size : JSON.parse('['+argv.size+']')
+         },
+         cb);
+
+function cb(err, results){
+    if(arguments.length === 0){
+        process.exit(1);
+    }
+    process.exit(results.exitCode);
+}
+
