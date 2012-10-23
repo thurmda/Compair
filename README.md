@@ -26,6 +26,7 @@ options
     compair
 
 Set a baseline image for a webpage file
+
     compair --url=file://$PWD/test/index.html --comp=test/tmp/readme -b
 
 
