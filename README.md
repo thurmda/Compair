@@ -22,6 +22,7 @@ from anywhere.
 
 Executing compair with no options will print a help message detailing all
 options
+    
     compair
 
 Set a baseline image for a webpage file
@@ -29,18 +30,20 @@ Set a baseline image for a webpage file
 
 
 Compare a slightly different webpage to the baseline captured previously
+    
     compair --url=file://$PWD/test/index2.html --comp=test/tmp/readme
 
 
 
 Set baseline screenshots in widths for various mobile devices.
+    
     compair --url=file://$PWD/test/index.html --comp=test/tmp/readme -size=320,768,1024 -b
 
 
 
 ### Links
 
-Good examples of responsive design sites
+#### Good examples of responsive design sites
 
 http://www.ethanmarcotte.com/
 http://forefathersgroup.com/
@@ -48,17 +51,16 @@ http://www.gosphero.com/
 http://css-tricks.com/
 
 
-About responsive design
+#### About responsive design
 
-http://line25.com/tutorials/create-a-responsive-web-design-with-media-queries
-http://www.onextrapixel.com/2012/04/23/responsive-web-design-layouts-and-media-queries/
-http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-http://socialdriver.com/2012/07/20-best-responsive-websites/
+* http://line25.com/tutorials/create-a-responsive-web-design-with-media-queries
+* http://www.onextrapixel.com/2012/04/23/responsive-web-design-layouts-and-media-queries/
+* http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+* http://socialdriver.com/2012/07/20-best-responsive-websites/
 
 
-Other projects like this
-http://www.cambus.net/creating-thumbnails-using-phantomjs-and-imagemagick/
-http://mediaqueri.es/
-
-http://www.imagemagick.org/script/command-line-options.php#metric
-http://www.imagemagick.org/Usage/compare/
+#### Other projects like this
+* http://www.cambus.net/creating-thumbnails-using-phantomjs-and-imagemagick/
+* http://mediaqueri.es/
+* http://www.imagemagick.org/script/command-line-options.php#metric
+* http://www.imagemagick.org/Usage/compare/
