@@ -9,7 +9,8 @@
     "node": "~0.6.8"
   },
   "dependencies": {
-    "phantom" : "https://github.com/thurmda/phantomjs-node/tarball/master"
+    "phantom" : "https://github.com/thurmda/phantomjs-node/tarball/master",
+    "optimist" : "0.3.4" 
   },
   "devDependencies": {},
   "optionalDependencies": {},
