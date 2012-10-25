@@ -9,7 +9,7 @@ unintentionaly change a design could be caught imediately. It can also speed you
 development of a responsive design layout.
 
 ## Install
-    git clone git@bitbucket.org:thurmda/compair.git
+    git clone git@github.com:thurmda/Compair.git
     npm install
     npm test
 
