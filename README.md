@@ -8,6 +8,8 @@ to be used with Jenkins so that modifications to CSS or HTML that
 unintentionaly change a design could be caught imediately. It can also speed your
 development of a responsive design layout.
 
+![example](https://github.com/thurmda/compair/demo/test/tmp/demo-000.png)
+
 ## Install
 
     git clone git@github.com:thurmda/Compair.git
