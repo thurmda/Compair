@@ -8,7 +8,7 @@ to be used with Jenkins so that modifications to CSS or HTML that
 unintentionaly change a design could be caught imediately. It can also speed your
 development of a responsive design layout.
 
-![example](https://github.com/thurmda/compair/demo/test/tmp/demo-000.png)
+![example](https://github.com/thurmda/compair/demo/test/tmp/compair-diff.png)
 
 ## Install
 
@@ -76,7 +76,10 @@ Set baseline screenshots in widths for various mobile devices.
 
     compair --url=file://$PWD/test/index.html --comp=test/tmp/readme -size=320,768,1024 -b
 
+Compare gitub pages for different branches of this project:
 
+    compair --url=https://github.com/thurmda/compair/demo --comp=compair -b
+    compair --url=https://github.com/thurmda/compair --comp=compair
 
 ### Links
 
