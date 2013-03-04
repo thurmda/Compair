@@ -1,4 +1,5 @@
 #!/bin/bash
 for line in $(cat $1); do 
-    compair --url=$line; 
+    comp=${line/http:\/\//};
+    compair -b --url=$line --comp=${comp/%\//};
 done; 
