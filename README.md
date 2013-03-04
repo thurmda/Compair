@@ -75,8 +75,26 @@ Set baseline screenshots in widths for various mobile devices.
     compair --url=file://$PWD/test/index.html --comp=test/tmp/readme -size=320,768,1024 -b
 
 
+###batch example (/examples/batchcompair.sh)
 
-### Links
+This is an example script that will create a screen shot of multiple urls. Call
+the script like 
+
+    ./batchcompair urls.txt
+
+
+    ````bash
+    #!/bin/bash
+    for line in $(cat $1); do 
+        comp=${line/http:\/\//};
+        compair -b --url=$line --comp=${comp/%\//};
+    done; 
+    ````
+
+
+
+
+## Links
 
 #### Good examples of responsive design sites
 
