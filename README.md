@@ -82,7 +82,7 @@ the script like
 
     ./batchcompair urls.txt
 
-
+script source : 
     ````bash
     #!/bin/bash
     for line in $(cat $1); do 
