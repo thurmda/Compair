@@ -81,7 +81,25 @@ Compare gitub pages for different branches of this project:
     compair --url=https://github.com/thurmda/compair/demo --comp=compair -b
     compair --url=https://github.com/thurmda/compair --comp=compair
 
-### Links
+###batch example (/examples/batchcompair.sh)
+
+This is an example script that will create a screen shot of multiple urls. Call
+the script like 
+
+    ./batchcompair urls.txt
+
+script source : 
+
+    #!/bin/bash
+    for line in $(cat $1); do 
+        comp=${line/http:\/\//};
+        compair -b --url=$line --comp=${comp/%\//};
+    done; 
+
+
+
+
+## Links
 
 #### Good examples of responsive design sites
 
