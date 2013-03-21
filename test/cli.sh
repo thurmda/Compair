@@ -1,11 +1,11 @@
 #!/bin/bash
-echo -e "bin/compair Shows help text"
+echo -e "\nbin/compair Shows help text"
 bin/compair
 if [ $? -eq 0 ]
     then echo 'FAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
 fi
 
-echo -e "bin/compair --url=file://$PWD/test/index.html --comp=test/tmp/test -b
+echo -e "\nbin/compair --url=file://$PWD/test/index.html --comp=test/tmp/test -b
 \nSets baseline"
 bin/compair --url=file://$PWD/test/index.html --comp=test/tmp/test -b
 if [ $? -eq 1 ]
