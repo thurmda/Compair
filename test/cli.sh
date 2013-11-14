@@ -22,9 +22,20 @@ fi
 
 
 
-echo -e "bin/compair --url=file://$PWD/test/index2.html --comp=test/tmp/test
-\nCompare's different to  baseline"
-bin/compair --url=file://$PWD/test/index2.html --comp=test/tmp/test
-if [ $? -eq 0 ]
-    then echo 'FAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-fi
+#echo -e "bin/compair --url=file://$PWD/test/index2.html --comp=test/tmp/test
+#\nCompare's different to  baseline"
+#bin/compair --url=file://$PWD/test/index2.html --comp=test/tmp/test
+#if [ $? -eq 0 ]
+    #then echo 'FAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+#fi
+
+
+#echo -e"Compare different size pages"
+#bin/compair --url=https://github.com/thurmda/compair/demo --comp=compair -b
+#bin/compair --url=https://github.com/thurmda/compair --comp=compair
+#if [ $? -eq 0 ]
+    #then echo 'FAIL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+#fi
+
+
+
